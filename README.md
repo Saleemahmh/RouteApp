@@ -1,3 +1,18 @@
+RouteApp:
+-----------------
+RouteApp is created using [Ionic Framework](http://ionicframework.com/) which is used for mobile Development.
+This project is build using Ionic 2 and Angular 2 provided the [Routes API](https://github.com/Saleemahmh/Routes)
+in GitHub.
+
+Ionic Framework:
+------------------
+
+Ionic apps are created and developed primarily through the Ionic command line utility (the “CLI”), and use Cordova to build and deploy as a native app.
+This means we need to install a few utilities to get developing.
+The Ionic Framework enables the creation of cross platform mobile applications with HTML, 
+CSS and JavaScript(Angular). Ionic 1 was built with Angular 1.*, and with Angular 2 recently released, 
+the second major version of Ionic is also imminent.
+
 This is a starter template for [Ionic](http://ionicframework.com/docs/) projects.
 
 ## How to use this template
@@ -24,3 +39,22 @@ $ ionic cordova run ios
 
 Substitute ios for android if not on a Mac.
 
+Home Page:
+-----------
+
+![](https://github.com/Saleemahmh/RouteApp/blob/master/resources/Home%20Ionic%201.PNG?raw=true)
+
+Bus Route:
+-----------
+
+![](https://github.com/Saleemahmh/RouteApp/blob/master/resources/Bus%20Route%20Ionic%202.PNG?raw=true)
+
+Train Route:
+------------
+
+![](https://github.com/Saleemahmh/RouteApp/blob/master/resources/Train%20Route%203.PNG?raw=true)
+
+Chennai City:
+-------------
+
+![](https://github.com/Saleemahmh/RouteApp/blob/master/resources/Chennai%20City%20Ionic%204.PNG?raw=true)
