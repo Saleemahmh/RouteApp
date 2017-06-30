@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title align="center">
+      Chennai City
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content id="content" padding class="card-background-page"><br><br><br>
+    <label class="item item-select" name="source">
+      <span class="input-label">Select city</span></label><br>
+    <form (ngSubmit)="cities(city)" #heroForm="ngForm">
+      
+    <select  [(ngModel)]="city" name="city">
+    <option>Adyar</option>
+    <option>Anna Nagar</option>
+    <option>Chennai Central</option>
+    <option>Chepauk</option>
+    <option>Chromepet</option>
+    <option>Egmore</option>
+    <option>Guindy</option>
+    <option>Koyambedu</option>
+    <option>Mamallapuram</option>
+    <option>Meenambakkam</option>
+    <option>Mylapore</option>
+    <option>Nungambakkam</option>
+    <option>Poonamalee</option>
+    <option>Royapettah</option>
+    <option>Taramani</option>
+    <option>TNagar</option>
+    <option>Triplicane</option>
+    <option>Vadapalani</option>
+    <option>Vandalur</option>
+    <option>Velachery</option>               
+  </select><br><br>
+ <button type="submit"  class="button button-primary"style="color: 'primary'; width: 25%; height: 39px;align:center;">Search <ion-icon name="search"></ion-icon></button>
+      
+    </form>
+ <br>
+   <ion-card *ngFor="let img of imgurl ">
+    <img src="{{img.url}}"/>
+   </ion-card>
+</ion-content>

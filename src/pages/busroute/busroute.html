@@ -1,0 +1,567 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title align="center" >
+     Bus Route
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content id="content" padding>
+  <form  (ngSubmit)=" routeNumber(source, destination)" #heroForm="ngForm">
+
+  <label class="item item-select" name="source">
+  <span class="input-label">Source</span></label><br>
+  <select  [(ngModel)]="source" name="source">
+    <option>Adyar</option>
+<option>Agarammel</option>
+<option>Agaramthen</option>
+<option>AGSColony</option>
+<option>Alamathi</option>
+<option>Alathur</option>
+<option>Amarambedu</option>
+<option>Ambathur estate</option>
+<option>Ammapettai</option>
+<option>Anakaputhur</option>
+<option>Angadu</option>
+<option>Anna Nagar</option>
+<option>AnnaiSivakaminagar</option>
+<option>Annamalaichery</option>
+<option>Annasquare</option>
+<option>Arakambakkam</option>
+<option>Arani</option>
+<option>Arumanthai</option>
+<option>Ashargana</option>
+<option>Athipattu</option>
+<option>Avadi</option>
+<option>Avurivakkam</option>
+<option>Ayapakkam</option>
+<option>Aynavaram</option>
+<option>Ayyappan madan</option>
+<option>AzeezeeNagar</option>
+<option>Balaji Nagar</option>
+<option>BesantNagar</option>
+<option>Bharath electronics</option>
+<option>Bhondur</option>
+<option>Broadway</option>
+<option>Central</option>
+<option>Chembarambakkam</option>
+<option>Chemmenchery</option>
+<option>Chengalpet</option>
+<option>Chitlapakkam</option>
+<option>Chrompet</option>
+<option>CMBT</option>
+<option>CowlBazaar</option>
+<option>Dasarathapuram</option>
+<option>Devik Eswari Nagar</option>
+<option>DhargasNagar</option>
+<option>DurgaNagar</option>
+<option>Echankaranai</option>
+<option>Egmore</option>
+<option>Ekkatuthangal</option>
+<option>Elambakkam</option>
+<option>ElangoNagar</option>
+<option>Enambakkam</option>
+<option>Ennore</option>
+<option>Ernavoor</option>
+<option>Erumaivettipalayam</option>
+<option>EzhilNagar</option>
+<option>Foreshore Estate</option>
+<option>ForeshoreEstate</option>
+<option>GKMColony</option>
+<option>Gnanmoorthy Nagar</option>
+<option>Gnayaru</option>
+<option>Guduvanchery</option>
+<option>Guindy Estate</option>
+<option>Gummudipoondi</option>
+<option>Hasthinapuram</option>
+<option>High Court</option>
+<option>ICF</option>
+<option>ICF Colony</option>
+<option>Injambakkam</option>
+<option>IOC</option>
+<option>Iyappanthangal</option>
+<option>Iyyappanthangal</option>
+<option>J J Nagar</option>
+<option>J J Nagar East</option>
+<option>J J Nagar West</option>
+<option>K Kanadasan Nagar</option>
+<option>K Kannadasan Nagar</option>
+<option>Kadambattur</option>
+<option>Kadhavoor</option>
+<option>Kalivanthapattu</option>
+<option>Kallikuppam</option>
+<option>Kallur</option>
+<option>Kamarajapuram</option>
+<option>Kanathur</option>
+<option>Kancheepuram</option>
+<option>Kandigai</option>
+<option>KannagiNagar</option>
+<option>Kannam</option>
+<option>Kanniamman Nagar</option>
+<option>Karanai</option>
+<option>Karanodai</option>
+<option>Kargil nagar</option>
+<option>Karuku</option>
+<option>Karumbakkam</option>
+<option>Kattrambakkam</option>
+<option>Kattupalli</option>
+<option>Keerapakkam</option>
+<option>Kelambakkam</option>
+<option>Kezhakaranai Koot Rd</option>
+<option>Kilkatalai</option>
+<option>Kilkondaiyur</option>
+<option>Kizhanoor</option>
+<option>KK Nagar</option>
+<option>Kkanadasan Nagar</option>
+<option>Kodungaiyur Parvathynagar</option>
+<option>KodungaiyurParvathyNagar</option>
+<option>Kolathur</option>
+<option>Koman Nagar</option>
+<option>Korattur</option>
+<option>Korukkpet</option>
+<option>Korukkupet</option>
+<option>Kosappur</option>
+<option>Kotturpuram</option>
+<option>Kovalam</option>
+<option>Koyambedu Market</option>
+<option>Kundrathur</option>
+<option>Kuthambakkam</option>
+<option>Madarapakkam</option>
+<option>Madhanakuppam</option>
+<option>MadhavaramBS</option>
+<option>Madipakkam</option>
+<option>Maduravoyal</option>
+<option>Mahendra City</option>
+<option>Malanthur</option>
+<option>Mamallapuram</option>
+<option>Manali</option>
+<option>Manamathi</option>
+<option>Mandaveli</option>
+<option>Mangadu</option>
+<option>Manimangalam</option>
+<option>Manivakkam</option>
+<option>Mannivakkam</option>
+<option>Maraimalai Nagar</option>
+<option>MathurMMDA</option>
+<option>Medavakkam</option>
+<option>Melappedu</option>
+<option>Melkondaiyur</option>
+<option>Melkottiyur</option>
+<option>Menambedu</option>
+<option>Meppur</option>
+<option>Meyyur</option>
+<option>Minjur</option>
+<option>MKBNagar</option>
+<option>MMDAColony</option>
+<option>Mogalivakkam</option>
+<option>Mogappair</option>
+<option>Moovarasampet</option>
+<option>Moulivakkam</option>
+<option>Muthamiz Nagar</option>
+<option>Muthapudupet</option>
+<option>Mylapore</option>
+<option>Naduveerapattu</option>
+<option>Nallur</option>
+<option>Nandambakkam</option>
+<option>Nanganallur</option>
+<option>Navalur</option>
+<option>Neelamangalam</option>
+<option>Nemam</option>
+<option>New Erumaivettipalayam</option>
+<option>NGO Colony</option>
+<option>Nolambur Nagar</option>
+<option>Oonamancheri</option>
+<option>Oragadam</option>
+<option>Ottiambakkam</option>
+<option>Padappai</option>
+<option>Padikuppam</option>
+<option>Padiyanallur</option>
+<option>Padurmedu</option>
+<option>PakkamVillage</option>
+<option>Pallavakkam</option>
+<option>Pallavaram</option>
+<option>Pandur</option>
+<option>Pattabiram</option>
+<option>Pattur</option>
+<option>Pazhanthandalam</option>
+<option>Pazhaverkadu</option>
+<option>Perambakkam</option>
+<option>Perambur</option>
+<option>PeravallurKumaranNagar</option>
+<option>Periyapalayam</option>
+<option>Periyar Nagar</option>
+<option>PeriyarColony</option>
+<option>PeriyarNagar</option>
+<option>Perumbakkam</option>
+<option>Perumbedukuppam</option>
+<option>Perunthandalam</option>
+<option>Ponmar</option>
+<option>Ponneri</option>
+<option>Poochaithipedu</option>
+<option>Poompuhar</option>
+<option>Poonamallee</option>
+<option>Poondi</option>
+<option>Porur</option>
+<option>Pothur</option>
+<option>Pozhichalur</option>
+<option>Prithyangara Temple</option>
+<option>Puducherymedu</option>
+<option>Pudur</option>
+<option>Puthagaram</option>
+<option>Puzhal</option>
+<option>Puzhuthivakkam</option>
+<option>PuzhuthivakkamBS</option>
+<option>Q M ArtsCollege</option>
+<option>Ramapuram</option>
+<option>Red Hills</option>
+<option>Royapuram</option>
+<option>Saidapet</option>
+<option>Saidapet West</option>
+<option>Saligramam</option>
+<option>Seemavaram</option>
+<option>SenthilNagar</option>
+<option>Shozhinganallur</option>
+<option>Sidco</option>
+<option>Siruchery IT</option>
+<option>Siruchery IT park</option>
+<option>Somangalam</option>
+<option>SrinivasaNagar</option>
+<option>Sriperumbudur</option>
+<option>SrisankaraHealthCentre</option>
+<option>Sunguvarchathiram</option>
+<option>T Acaharavakkam</option>
+<option>T V K Nagar</option>
+<option>Tamarapakkam</option>
+<option>Tambaram</option>
+<option>Taramani</option>
+<option>TeachersColony</option>
+<option>Thalambur</option>
+<option>Thandalam</option>
+<option>Thanikachalam</option>
+<option>ThirumalaiNagar</option>
+<option>Thirumazhisai</option>
+<option>Thirunindravoor</option>
+<option>Thiruporur</option>
+<option>Thirusoolam</option>
+<option>Thiruvallur</option>
+<option>Thiruvanmiyur</option>
+<option>Thiruverkadu</option>
+<option>ThiruVKnagar</option>
+<option>Thiruvotriyur</option>
+<option>Thoraipakkam</option>
+<option>Tnagar</option>
+<option>Tollgate</option>
+<option>Tondiarpet</option>
+<option>Triplicane</option>
+<option>Uthukottai</option>
+<option>VadakkuMalaiambakkam</option>
+<option>Vadanemili</option>
+<option>Vadapalani</option>
+<option>Vadathur</option>
+<option>Vallakottai</option>
+<option>Vallalar Nagar</option>
+<option>Vandaloor</option>
+<option>Vazhuthigaimedu</option>
+<option>Velachery</option>
+<option>Vellavedu</option>
+<option>Venbakkam</option>
+<option>Vengaivasal</option>
+<option>Venkampakkam</option>
+<option>Venkatachalam</option>
+<option>Venkatamangalam</option>
+<option>Veppampattu</option>
+<option>Veppampattu Nagar</option>
+<option>Vhouse</option>
+<option>Vichoor</option>
+<option>Villivakkam</option>
+<option>Vinayagapuram</option>
+<option>Walajabad</option>
+
+
+  </select>
+
+<br><br>
+
+<label class="item item-select" name="destination">
+  <span class="input-label">Destination</span></label><br>
+  <select  [(ngModel)]="destination" name="destination">
+    <option>Adyar</option>
+<option>Agarammel</option>
+<option>Agaramthen</option>
+<option>AGSColony</option>
+<option>Alamathi</option>
+<option>Alathur</option>
+<option>Amarambedu</option>
+<option>Ambathur estate</option>
+<option>Ammapettai</option>
+<option>Anakaputhur</option>
+<option>Angadu</option>
+<option>Anna Nagar</option>
+<option>AnnaiSivakaminagar</option>
+<option>Annamalaichery</option>
+<option>Annasquare</option>
+<option>Arakambakkam</option>
+<option>Arani</option>
+<option>Arumanthai</option>
+<option>Ashargana</option>
+<option>Athipattu</option>
+<option>Avadi</option>
+<option>Avurivakkam</option>
+<option>Ayapakkam</option>
+<option>Aynavaram</option>
+<option>Ayyappan madan</option>
+<option>AzeezeeNagar</option>
+<option>Balaji Nagar</option>
+<option>BesantNagar</option>
+<option>Bharath electronics</option>
+<option>Bhondur</option>
+<option>Broadway</option>
+<option>Central</option>
+<option>Chembarambakkam</option>
+<option>Chemmenchery</option>
+<option>Chengalpet</option>
+<option>Chitlapakkam</option>
+<option>Chrompet</option>
+<option>CMBT</option>
+<option>CowlBazaar</option>
+<option>Dasarathapuram</option>
+<option>Devik Eswari Nagar</option>
+<option>DhargasNagar</option>
+<option>DurgaNagar</option>
+<option>Echankaranai</option>
+<option>Egmore</option>
+<option>Ekkatuthangal</option>
+<option>Elambakkam</option>
+<option>ElangoNagar</option>
+<option>Enambakkam</option>
+<option>Ennore</option>
+<option>Ernavoor</option>
+<option>Erumaivettipalayam</option>
+<option>EzhilNagar</option>
+<option>Foreshore Estate</option>
+<option>ForeshoreEstate</option>
+<option>GKMColony</option>
+<option>Gnanmoorthy Nagar</option>
+<option>Gnayaru</option>
+<option>Guduvanchery</option>
+<option>Guindy Estate</option>
+<option>Gummudipoondi</option>
+<option>Hasthinapuram</option>
+<option>High Court</option>
+<option>ICF</option>
+<option>ICF Colony</option>
+<option>Injambakkam</option>
+<option>IOC</option>
+<option>Iyappanthangal</option>
+<option>Iyyappanthangal</option>
+<option>J J Nagar</option>
+<option>J J Nagar East</option>
+<option>J J Nagar West</option>
+<option>K Kanadasan Nagar</option>
+<option>K Kannadasan Nagar</option>
+<option>Kadambattur</option>
+<option>Kadhavoor</option>
+<option>Kalivanthapattu</option>
+<option>Kallikuppam</option>
+<option>Kallur</option>
+<option>Kamarajapuram</option>
+<option>Kanathur</option>
+<option>Kancheepuram</option>
+<option>Kandigai</option>
+<option>KannagiNagar</option>
+<option>Kannam</option>
+<option>Kanniamman Nagar</option>
+<option>Karanai</option>
+<option>Karanodai</option>
+<option>Kargil nagar</option>
+<option>Karuku</option>
+<option>Karumbakkam</option>
+<option>Kattrambakkam</option>
+<option>Kattupalli</option>
+<option>Keerapakkam</option>
+<option>Kelambakkam</option>
+<option>Kezhakaranai Koot Rd</option>
+<option>Kilkatalai</option>
+<option>Kilkondaiyur</option>
+<option>Kizhanoor</option>
+<option>KK Nagar</option>
+<option>Kkanadasan Nagar</option>
+<option>Kodungaiyur Parvathynagar</option>
+<option>KodungaiyurParvathyNagar</option>
+<option>Kolathur</option>
+<option>Koman Nagar</option>
+<option>Korattur</option>
+<option>Korukkpet</option>
+<option>Korukkupet</option>
+<option>Kosappur</option>
+<option>Kotturpuram</option>
+<option>Kovalam</option>
+<option>Koyambedu Market</option>
+<option>Kundrathur</option>
+<option>Kuthambakkam</option>
+<option>Madarapakkam</option>
+<option>Madhanakuppam</option>
+<option>MadhavaramBS</option>
+<option>Madipakkam</option>
+<option>Maduravoyal</option>
+<option>Mahendra City</option>
+<option>Malanthur</option>
+<option>Mamallapuram</option>
+<option>Manali</option>
+<option>Manamathi</option>
+<option>Mandaveli</option>
+<option>Mangadu</option>
+<option>Manimangalam</option>
+<option>Manivakkam</option>
+<option>Mannivakkam</option>
+<option>Maraimalai Nagar</option>
+<option>MathurMMDA</option>
+<option>Medavakkam</option>
+<option>Melappedu</option>
+<option>Melkondaiyur</option>
+<option>Melkottiyur</option>
+<option>Menambedu</option>
+<option>Meppur</option>
+<option>Meyyur</option>
+<option>Minjur</option>
+<option>MKBNagar</option>
+<option>MMDAColony</option>
+<option>Mogalivakkam</option>
+<option>Mogappair</option>
+<option>Moovarasampet</option>
+<option>Moulivakkam</option>
+<option>Muthamiz Nagar</option>
+<option>Muthapudupet</option>
+<option>Mylapore</option>
+<option>Naduveerapattu</option>
+<option>Nallur</option>
+<option>Nandambakkam</option>
+<option>Nanganallur</option>
+<option>Navalur</option>
+<option>Neelamangalam</option>
+<option>Nemam</option>
+<option>New Erumaivettipalayam</option>
+<option>NGO Colony</option>
+<option>Nolambur Nagar</option>
+<option>Oonamancheri</option>
+<option>Oragadam</option>
+<option>Ottiambakkam</option>
+<option>Padappai</option>
+<option>Padikuppam</option>
+<option>Padiyanallur</option>
+<option>Padurmedu</option>
+<option>PakkamVillage</option>
+<option>Pallavakkam</option>
+<option>Pallavaram</option>
+<option>Pandur</option>
+<option>Pattabiram</option>
+<option>Pattur</option>
+<option>Pazhanthandalam</option>
+<option>Pazhaverkadu</option>
+<option>Perambakkam</option>
+<option>Perambur</option>
+<option>PeravallurKumaranNagar</option>
+<option>Periyapalayam</option>
+<option>Periyar Nagar</option>
+<option>PeriyarColony</option>
+<option>PeriyarNagar</option>
+<option>Perumbakkam</option>
+<option>Perumbedukuppam</option>
+<option>Perunthandalam</option>
+<option>Ponmar</option>
+<option>Ponneri</option>
+<option>Poochaithipedu</option>
+<option>Poompuhar</option>
+<option>Poonamallee</option>
+<option>Poondi</option>
+<option>Porur</option>
+<option>Pothur</option>
+<option>Pozhichalur</option>
+<option>Prithyangara Temple</option>
+<option>Puducherymedu</option>
+<option>Pudur</option>
+<option>Puthagaram</option>
+<option>Puzhal</option>
+<option>Puzhuthivakkam</option>
+<option>PuzhuthivakkamBS</option>
+<option>Q M ArtsCollege</option>
+<option>Ramapuram</option>
+<option>Red Hills</option>
+<option>Royapuram</option>
+<option>Saidapet</option>
+<option>Saidapet West</option>
+<option>Saligramam</option>
+<option>Seemavaram</option>
+<option>SenthilNagar</option>
+<option>Shozhinganallur</option>
+<option>Sidco</option>
+<option>Siruchery IT</option>
+<option>Siruchery IT park</option>
+<option>Somangalam</option>
+<option>SrinivasaNagar</option>
+<option>Sriperumbudur</option>
+<option>SrisankaraHealthCentre</option>
+<option>Sunguvarchathiram</option>
+<option>T Acaharavakkam</option>
+<option>T V K Nagar</option>
+<option>Tamarapakkam</option>
+<option>Tambaram</option>
+<option>Taramani</option>
+<option>TeachersColony</option>
+<option>Thalambur</option>
+<option>Thandalam</option>
+<option>Thanikachalam</option>
+<option>ThirumalaiNagar</option>
+<option>Thirumazhisai</option>
+<option>Thirunindravoor</option>
+<option>Thiruporur</option>
+<option>Thirusoolam</option>
+<option>Thiruvallur</option>
+<option>Thiruvanmiyur</option>
+<option>Thiruverkadu</option>
+<option>ThiruVKnagar</option>
+<option>Thiruvotriyur</option>
+<option>Thoraipakkam</option>
+<option>Tnagar</option>
+<option>Tollgate</option>
+<option>Tondiarpet</option>
+<option>Triplicane</option>
+<option>Uthukottai</option>
+<option>VadakkuMalaiambakkam</option>
+<option>Vadanemili</option>
+<option>Vadapalani</option>
+<option>Vadathur</option>
+<option>Vallakottai</option>
+<option>Vallalar Nagar</option>
+<option>Vandaloor</option>
+<option>Vazhuthigaimedu</option>
+<option>Velachery</option>
+<option>Vellavedu</option>
+<option>Venbakkam</option>
+<option>Vengaivasal</option>
+<option>Venkampakkam</option>
+<option>Venkatachalam</option>
+<option>Venkatamangalam</option>
+<option>Veppampattu</option>
+<option>Veppampattu Nagar</option>
+<option>Vhouse</option>
+<option>Vichoor</option>
+<option>Villivakkam</option>
+<option>Vinayagapuram</option>
+<option>Walajabad</option>
+
+  </select>
+
+
+<br><br><br>
+<button  class="button button-primary"style="color: 'primary'; width: 300px; height: 39px;align:center;">Route Number</button></form>
+<br>
+
+<ion-card style="width:50%;" align="center">
+<ion-list *ngFor="let route of routenum">
+<ion-item>
+ <ion-icon  ios="ios-bus" md="md-bus"></ion-icon> <ion-badge item-end>{{route.route_Num}}</ion-badge>
+ </ion-item>
+</ion-list>
+</ion-card>
+</ion-content>

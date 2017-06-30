@@ -1,0 +1,24 @@
+page-home {
+    ion-navbar{
+	font: oblique;
+	font-family: 'Didot-Italic';
+	font-style: italic;
+	color: primary; 
+    }
+h3{
+    color:#4652DB;
+    font-weight:400;
+    font-style:italic;
+    text-align:center;
+}
+ion-content {
+	background:
+		url("http://www.designbolts.com/wp-content/uploads/2012/12/Triangle-White-Seamless-Patterns.jpg");
+	background-color: none;
+	font: oblique;
+	size: 20;
+	font-family: 'Didot-Italic';
+	font-style: italic;
+	color: #B22222;
+}
+}
