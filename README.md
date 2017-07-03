@@ -50,12 +50,18 @@ Home Page:
 Bus Route:
 -----------
 
-![](https://github.com/Saleemahmh/RouteApp/blob/master/resources/Bus%20Route%20Ionic%202.PNG?raw=true)
+![](https://github.com/Saleemahmh/RouteApp/blob/master/resources/Bus%20route%201.PNG?raw=true)  
+---------------------
+![](https://github.com/Saleemahmh/RouteApp/blob/master/resources/Bus%20route%202.PNG?raw=true)
+
 
 Train Route:
 ------------
 
-![](https://github.com/Saleemahmh/RouteApp/blob/master/resources/Train%20Route%203.PNG?raw=true)
+![](https://github.com/Saleemahmh/RouteApp/blob/master/resources/Train%20route%201.PNG?raw=true)
+----------------------
+![](https://github.com/Saleemahmh/RouteApp/blob/master/resources/Train%20route%202.PNG?raw=true)
+
 
 Chennai City:
 -------------
